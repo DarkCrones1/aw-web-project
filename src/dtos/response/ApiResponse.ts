@@ -20,14 +20,3 @@ export interface Meta {
   NextPageNumber: number;
   PreviousPageNumber: number;
 }
-
-// Converts JSON strings to/from your types
-export class Convert {
-  public static toAPIResponse<T>(json: string): APIResponse<T> {
-    return JSON.parse(json);
-  }
-
-  public static aPIResponseToJson<T>(value: APIResponse<T>): string {
-    return JSON.stringify(value);
-  }
-}

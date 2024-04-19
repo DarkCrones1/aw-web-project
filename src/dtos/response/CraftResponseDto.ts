@@ -11,14 +11,3 @@ export interface CraftResponseDto extends BaseCatalogResponseDto {
   History: string;
   CraftPictureUrl: string;
 }
-
-// Converts JSON strings to/from your types
-export class Convert {
-  public static toCraftResponseDto(json: string): CraftResponseDto {
-    return JSON.parse(json);
-  }
-
-  public static craftResponseDtoToJson(value: CraftResponseDto): string {
-    return JSON.stringify(value);
-  }
-}

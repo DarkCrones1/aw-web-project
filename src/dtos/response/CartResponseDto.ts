@@ -6,13 +6,3 @@ export interface CartResponseDto {
   StatusName: string;
   Total: number;
 }
-
-export class Convert {
-  public static toCartResponseDto(json: string): CartResponseDto {
-    return JSON.parse(json);
-  }
-
-  public static cartResponseDtoToJson(value: CartResponseDto): string {
-    return JSON.stringify(value);
-  }
-}

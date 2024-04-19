@@ -21,16 +21,3 @@ export interface CraftDetailResponseDto {
   TechniqueType: TechniqueTypeResponseDto[];
   Property: PropertyResponseDto[];
 }
-
-// Converts JSON strings to/from your types
-export class Convert {
-  public static toCraftDetailResponseDto(json: string): CraftDetailResponseDto {
-    return JSON.parse(json);
-  }
-
-  public static craftDetailResponseDtoToJson(
-    value: CraftDetailResponseDto
-  ): string {
-    return JSON.stringify(value);
-  }
-}

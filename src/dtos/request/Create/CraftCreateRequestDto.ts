@@ -8,18 +8,3 @@ export interface CraftCreateRequestDto extends BaseCatalogCreateRequestDto {
   TechniqueTypeIds?: number[];
   Propertys?: BaseCatalogCreateRequestDto[];
 }
-
-// Convierte cadenas JSON hacia/desde tus tipos
-export class Convert {
-  public static toBaseCatalogCreateRequestDto(
-    json: string
-  ): BaseCatalogCreateRequestDto {
-    return JSON.parse(json);
-  }
-
-  public static baseCatalogCreateRequestDtoToJson(
-    value: BaseCatalogCreateRequestDto
-  ): string {
-    return JSON.stringify(value);
-  }
-}
