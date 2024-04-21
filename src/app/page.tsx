@@ -1,4 +1,4 @@
-import { GetCategory } from "@/utils/Category/getCategory";
+import { GetCategory } from "@/libs/Category/getCategory";
 
 export default async function Page() {
   const { Data, Message, Meta } = await GetCategory();
