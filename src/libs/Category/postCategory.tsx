@@ -1,4 +1,4 @@
-import { CategoryCreateRequestDto } from "@/dtos/request/Create/CategoryCreateRequestDto";
+import { CategoryCreateRequestDto } from "@/dtos/request/create/CategoryCreateRequestDto";
 import { APIResponse } from "@/dtos/response/ApiResponse";
 import { CategoryResponseDto } from "@/dtos/response/CategoryResponseDto";
 

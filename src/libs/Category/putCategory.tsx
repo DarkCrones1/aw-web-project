@@ -1,5 +1,6 @@
 import { CategoryUpdateRequestDto } from "@/dtos/request/update/CategoryUpdateRequestDto";
 import { APIResponse } from "@/dtos/response/ApiResponse";
+import { CategoryResponseDto } from "@/dtos/response/CategoryResponseDto";
 
 const token = localStorage.getItem("token");
 
@@ -19,7 +20,7 @@ export async function PutCategory({
       },
       body: JSON.stringify(formData),
     });
-    const data: APIResponse<CategoryUpdateRequestDto> = await response.json();
+    const data: APIResponse<CategoryResponseDto> = await response.json();
     return data.Data;
   } catch (error) {
     console.error("Error al actualizar la categoría:", error);
